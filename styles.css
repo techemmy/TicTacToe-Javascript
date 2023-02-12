@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,209,67,1) 0%, rgba(255,145,83,1) 90% );
+    height: 100vh;
+}
+
+.game_board {
+    border: 3px solid rgba(159, 5, 255, 0.822);
+    background: url('./pattern.svg');
+    width: 25rem;
+    height: 25rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.click_spot {
+    display: grid;
+    align-items: center;
+    text-align: center;
+    border: 1px solid rgba(171, 41, 252, 0.292);
+    background-color:rgba(252, 247, 255, 0.869);
+    /* transition: background-color .1s ease-in-out; */
+    font-size: large;
+    font-weight: 700;
+}
+
+.click_spot:hover {
+    background-color:rgba(159, 5, 255, 0.484);
+    color: rgba(252, 247, 255, 0.869)
+}
+
+.click_spot:active {
+    background-color: rgba(82, 3, 131, 0.881) ;
+}
+
+#resetGame {
+    padding: 1em 2em;
+    margin: 1em 0;
+    width: 150px;
+    color: rgba(252, 247, 255, 0.869);
+    background-color: rgba(255, 10, 10, .9);
+    border: 2px solid rgba(234, 234, 234, 0.869);
+    border-radius: 8px;
+}
